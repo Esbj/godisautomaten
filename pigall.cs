@@ -3,7 +3,7 @@ namespace godisautomaten{
     class Pigall : candyType
     {
         candyType pigall = new candyType();
-        Pigall(){
+        public Pigall(){
             pigall.ammount = 13;
         }
     }

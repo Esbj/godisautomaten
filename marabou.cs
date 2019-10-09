@@ -3,7 +3,7 @@ namespace godisautomaten{
     class Marabou : candyType
     {
         candyType marabou = new candyType();
-        Marabou(){
+        public Marabou(){
             marabou.ammount = 5;
         }
     }

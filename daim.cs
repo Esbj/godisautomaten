@@ -3,7 +3,7 @@ namespace godisautomaten{
     class Daim : candyType
     {
         candyType daim = new candyType();
-        Daim(){
+        public Daim(){
             daim.ammount = 7;
         }
     }

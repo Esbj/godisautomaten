@@ -2,7 +2,7 @@ using System;
 namespace godisautomaten{
     public class candyType {
         public int ammount;
-        static int sellCandy(int toSell, candyType candy){
+        public int sellCandy(int toSell, candyType candy){
             if (candy.ammount > 0){
                 candy.ammount = candy.ammount -toSell;
                 return candy.ammount;
