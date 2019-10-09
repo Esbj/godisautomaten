@@ -6,11 +6,14 @@ namespace godisautomaten
     {
         static void Main(string[] args)
         {
+            Japp japp = new Japp();
             Console.WriteLine("Välkommen till godisautomaten!");
-            Console.WriteLine("Japp");
-            Console.WriteLine("Daim");
-            Console.WriteLine("Marabou");
-            Console.WriteLine("Pigall");
+            Console.WriteLine("Lucka 1: Japp");
+            Console.WriteLine("Lucka 2: Daim");
+            Console.WriteLine("Lucka 3: Marabou");
+            Console.WriteLine("Lucka 4: Pigall");
+            
+            candyType Daim  = new candyType();
             
         }
     }
