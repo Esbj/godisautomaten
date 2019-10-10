@@ -1,15 +1,20 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace godisautomaten
 {
     class Program
     {
+        public List<candyType> bag = new List<candyType>();
         static void Main(string[] args)
         {
             Japp japp = new Japp();
             Daim daim  = new Daim();
             Pigall pigall = new Pigall();
             Marabou marabou  = new Marabou();
+            int jappBagCount = 0;
+            int daimBagCount = 0;
+            int pigallBagCount = 0;
+            int marabouBagCount = 0;
             while(true){
                 Console.WriteLine("Välkommen till godisautomaten!");
                 Console.WriteLine("Detta godiset finns tillgängligt");
@@ -22,19 +27,19 @@ namespace godisautomaten
                 string choise = Console.ReadLine();
                 Console.WriteLine("Hur många?");
                 
-                int ammount = Convert.ToInt32(Console.ReadLine());
+                int toBuy = Convert.ToInt32(Console.ReadLine());
                 switch (choise){
                     case "Japp":
-                        japp.sellCandy(ammount, japp);
+                        japp.sellCandy(toBuy, japp);
                         break;
                     case "Daim":
-                        daim.sellCandy(ammount, daim);
+                        daim.sellCandy(toBuy, daim);
                         break;
                     case "Marabou":
-                        marabou.sellCandy(ammount, daim);
+                        marabou.sellCandy(toBuy, daim);
                         break;
                     case "Pigall":
-                        pigall.sellCandy(ammount, pigall);
+                        pigall.sellCandy(toBuy, pigall);
                         break;    
                     default:
                         Console.WriteLine("Ange endast godistyper som finns listade");
