@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 namespace godisautomaten{
+    
     public class candyType {
+        public List<candyType> bag = new List<candyType>();
         public int ammount;
          public void addToBag(candyType candy, int ammount){
             if (ammount > 0){

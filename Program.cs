@@ -4,7 +4,7 @@ namespace godisautomaten
 {
     class Program
     {
-        public List<candyType> bag = new List<candyType>();
+        
         static void Main(string[] args)
         {
             Japp japp = new Japp();
